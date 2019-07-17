@@ -1,14 +1,6 @@
-Shoes.app(:width => 700,
-          :height => 600,
-          :title => "Ludicolo")  do
-  background("grass-type-pokemon-pattern-vector.jpg")
-  @pet = nil
-  flow(:width  => 700,
-       :height => 600,
-       :scroll => false) do
+require "benchmark"
 
-    style(:margin_left => "40%", :margin_top => "30%")
-    image "ludicolo.gif" , width: 170 , height: 170
-  end
-
+while true
+  puts "ola"
+  Benchmark.measure { sleep 10.0 }
 end
